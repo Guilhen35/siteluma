@@ -1,5 +1,5 @@
 function abrirWhatsApp() {
-  const numero = "5543999999999";
+  const numero = "5543991028965";
   const mensagem = "Olá! Gostaria de solicitar um orçamento de locação de plataforma.";
   const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
