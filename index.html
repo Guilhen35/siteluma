@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locação de Plataformas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo LUMA" class="logo-img">
+
+      <div>
+        <h1>LUMA</h1>
+        <span>Locação de Plataformas</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#equipamentos">Equipamentos</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+
+
+
+
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#equipamentos">Equipamentos</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+
+    <button onclick="abrirWhatsApp()">
+      Orçamentos
+    </button>
+  </div>
+
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content fade-in">
+
+      <span>Locação de plataformas aéreas</span>
+
+      <h2>
+        MAIS ALTURA.<br>
+        MAIS SEGURANÇA.<br>
+        <strong>MAIS RESULTADOS.</strong>
+      </h2>
+
+      <p>
+        Equipamentos modernos, equipe qualificada e foco total na segurança do seu projeto.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#equipamentos" class="btn-primary">
+          Ver Equipamentos
+        </a>
+
+        <button class="btn-outline" onclick="abrirWhatsApp()">
+          Solicitar Orçamento
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BENEFÍCIOS -->
+
+  <section class="benefits">
+
+    <div class="benefit-card reveal">
+      <h3>Alta Performance</h3>
+      <p>Equipamentos potentes e confiáveis.</p>
+    </div>
+
+    <div class="benefit-card reveal">
+      <h3>Segurança Prioridade</h3>
+      <p>Compromisso com a vida e com as normas.</p>
+    </div>
+
+    <div class="benefit-card reveal">
+      <h3>Atendimento Humanizado</h3>
+      <p>Soluções sob medida para cada cliente.</p>
+    </div>
+
+    <div class="benefit-card reveal">
+      <h3>Frota Moderna</h3>
+      <p>Equipamentos revisados e prontos para uso.</p>
+    </div>
+
+  </section>
+
+ <!-- QUEM SOMOS -->
+
+<section class="about reveal" id="quem-somos">
+
+  <div class="about-image">
+    <img 
+      src="assets/quem-somos.jpg" 
+      alt="Equipe LUMA"
+    >
+  </div>
+
+  <div class="about-content">
+
+    <span>QUEM SOMOS</span>
+
+    <h2>
+      SOLUÇÕES EM<br>
+      ALTURA COM<br>
+      <strong>SEGURANÇA E PERFORMANCE.</strong>
+    </h2>
+
+    <p>
+      A LUMA Locação de Plataformas oferece equipamentos modernos e suporte especializado para obras, manutenções industriais e trabalhos em altura.
+    </p>
+
+    <p>
+      Trabalhamos com foco em agilidade, segurança e atendimento personalizado para entregar a melhor solução para cada projeto.
+    </p>
+
+    <div class="about-numbers">
+
+      <div class="number-box">
+        <h3>+500</h3>
+        <span>Locações</span>
+      </div>
+
+      <div class="number-box">
+        <h3>+100</h3>
+        <span>Clientes</span>
+      </div>
+
+      <div class="number-box">
+        <h3>24h</h3>
+        <span>Atendimento</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- EQUIPAMENTOS -->
+
+  <section class="equipamentos" id="equipamentos">
+
+  <h2>Nossas Plataformas</h2>
+
+  <p>
+    Modelos disponíveis para locação com segurança e alta performance.
+  </p>
+
+  <div class="platform-list">
+
+    <div class="platform-item reveal">
+
+      <div class="platform-info">
+        <span>Modelo elétrico</span>
+
+        <h3>Plataforma Tesoura</h3>
+
+        <p>
+          Disponível nos modelos de 10m, 12m, 14m e 16m. Ideal para trabalhos em altura em pisos nivelados, galpões, indústrias e ambientes internos.
+        </p>
+
+        <button onclick="abrirEspecificacao('tesoura')">
+          Saiba mais
+        </button>
+      </div>
+
+      <div class="platform-image">
+        <img src="assets/tesoura.png" alt="Plataforma tesoura elétrica">
+      </div>
+
+    </div>
+
+    <div class="platform-item reveal">
+
+      <div class="platform-info">
+        <span>Modelo diesel</span>
+
+        <h3>Plataforma Articulada</h3>
+
+        <p>
+          Plataforma articulada de 16m, indicada para obras, áreas externas, manutenção industrial e locais que exigem maior alcance e mobilidade.
+        </p>
+
+        <button onclick="abrirEspecificacao('articulada')">
+          Saiba mais
+        </button>
+      </div>
+
+      <div class="platform-image">
+        <img src="assets/articulada.png" alt="Plataforma articulada diesel">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="spec-section" id="especificacoes">
+
+  <div class="spec-card" id="spec-tesoura">
+
+    <div class="spec-content">
+      <span>Especificações técnicas</span>
+
+      <h2>Plataforma Tesoura</h2>
+
+      <ul>
+        <li>Modelos disponíveis: 10m, 12m, 14m e 16m</li>
+        <li>Tipo: elétrica</li>
+        <li>Indicada para pisos nivelados</li>
+        <li>Ideal para galpões, indústrias e ambientes internos</li>
+        <li>Equipamento revisado e pronto para operação</li>
+      </ul>
+
+      <button onclick="abrirWhatsApp()">
+        Solicitar orçamento
+      </button>
+    </div>
+
+    <div class="spec-image">
+      <img src="assets/tesoura.png" alt="Plataforma tesoura">
+    </div>
+
+  </div>
+
+  <div class="spec-card" id="spec-articulada">
+
+    <div class="spec-content">
+      <span>Especificações técnicas</span>
+
+      <h2>Plataforma Articulada</h2>
+
+      <ul>
+        <li>Modelo disponível: 16m</li>
+        <li>Tipo: diesel</li>
+        <li>Indicada para áreas externas</li>
+        <li>Ideal para obras, fachadas e manutenção industrial</li>
+        <li>Maior alcance e mobilidade para trabalhos em altura</li>
+      </ul>
+
+      <button onclick="abrirWhatsApp()">
+        Solicitar orçamento
+      </button>
+    </div>
+
+    <div class="spec-image">
+      <img src="assets/articulada.png" alt="Plataforma articulada">
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- WHATSAPP -->
+
+  <section class="whatsapp-section reveal">
+    <div>
+      <h2>Pronto para <span>elevar seu projeto?</span></h2>
+      <p>Fale com nossos especialistas e encontre a plataforma ideal para sua necessidade.</p>
+    </div>
+
+    <div class="whatsapp-box">
+      <h3>Fale conosco pelo WhatsApp</h3>
+      <p>Clique no botão abaixo e converse diretamente com nossa equipe.</p>
+      <button onclick="abrirWhatsApp()">Orçamentos</button>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <strong>Telefone</strong>
+      <p>(43) 99102 - 8965 </p>
+    </div>
+
+    <div>
+      <strong>E-mail</strong>
+      <p>lumaplataformas@gmail.com</p>
+    </div>
+
+    <div>
+      <strong>Localização</strong>
+      <p>Arapongas - PR</p>
+    </div>
+  </footer>
+
+  <button class="whatsapp-floating" onclick="abrirWhatsApp()">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
